@@ -8,13 +8,13 @@ The structure of PP-YOLO Tiny is shown at the end of this file.
 
 ## Paddle Lite
 
-paddlepaddle is a deep learning framework, but it do not support Arm devices such as Raspberry. So, the official support another tool called paddle lite which can be deploy on much more mobile devices.
+paddlepaddle is a deep learning framework, but it do not support Arm devices such as Raspberry. So, the official support another tool called [paddle-lite](https://github.com/PaddlePaddle/Paddle-Lite), which can be deployed on much more mobile devices.
 
 ## Usage
 
 ### About
 
-This project is based on a detection mission which will be deployed on Raspberry 4B. The dataset is originally from [berkeley-BDD100K dataset](https://bdd-data.berkeley.edu/). The official annotation is two json file and I translate them into 79000 xml file[bdd100k_voc_labels](https://github.com/Feng1909/bdd100k_voc_labels), so that we can easily train our model by using [PaddleX](https://github.com/PaddlePaddle/PaddleX).
+This project is based on a detection mission which will be deployed on Raspberry 4B. The dataset is originally from [berkeley-BDD100K dataset](https://bdd-data.berkeley.edu/). The official annotations are two json files and I translate them into 79000 xml file (see [bdd100k_voc_labels](https://github.com/Feng1909/bdd100k_voc_labels)), so that we can easily train our model by using [PaddleX](https://github.com/PaddlePaddle/PaddleX).
 
 ### Requirement
 
@@ -61,7 +61,7 @@ raspios_full_armhf 2020-05-28-05:28
 
    The model is trained from 1% of  BDD100K dataset for 250 epochs
    
-   If you want to predict from a camera, change 
+   If you want to predict from a camera, change [if True](https://github.com/Feng1909/PPYOLO-Tiny/blob/main/predict.py#L7) into `if False`
 
 ## Structure of PPYOLO-Tiny
 
