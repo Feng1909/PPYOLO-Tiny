@@ -35,7 +35,13 @@ raspios_full_armhf 2020-05-28-05:28
 
 ### Step
 
-1. Build **Paddle Lite** and install it
+1. Build **Paddle Lite** and install it **or install the package I have already built**
+
+   The package is in the same respository called `paddlelite-a0e14603f-cp37-cp37m-linux_armv7l.whl`
+
+   using `pip3 install ` can install paddle-lite.
+
+   OR:
 
    Strongly suggest this blog [【超详细】树莓派4B 安装Paddle-Lite 2.8.0](https://blog.csdn.net/weixin_40973138/article/details/114780090?spm=1001.2014.3001.5501)
 
